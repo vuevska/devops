@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: homework8-image
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: homework8-image
+  revisionHistoryLimit: 2
+  progressDeadlineSeconds: 150
+  minReadySeconds: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 2
+  template:
+    metadata:
+      labels:
+        app: homework8-image
+    spec:
+      containers:
+      - name: homework8-pod
+        image: vuevska/homework8-image:2.0
+        ports:
+        - containerPort: 8080

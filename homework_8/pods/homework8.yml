@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: homework8-pod
+spec:
+  containers:
+  - name: homework8-container
+    image: vuevska/homework8-image:1.0
+    ports:
+    - containerPort: 80
