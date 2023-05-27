@@ -1,0 +1,4 @@
+devops-jenkins/dev
+devops-jenkins_dev
+devops-jenkins/master
+devops-jenkins_master

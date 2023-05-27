@@ -1,0 +1,33 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/devops
+The recommended git tool is: NONE
+using credential mv-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/devops/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vuevska/devops # timeout=10
+Fetching upstream changes from https://github.com/vuevska/devops
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Github credentials for vuevska
+ > git fetch --tags --force --progress -- https://github.com/vuevska/devops +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/dev
+Seen branch in repository origin/develop
+Seen branch in repository origin/main
+Seen branch in repository origin/master
+Seen branch in repository origin/test
+Seen 5 remote branches
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 2b34f8862efdf3fd180aaf3c2d005ca22f7cd72d (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2b34f8862efdf3fd180aaf3c2d005ca22f7cd72d # timeout=10
+Commit message: "Update index.html on master"
+ > git rev-list --no-walk 2b34f8862efdf3fd180aaf3c2d005ca22f7cd72d # timeout=10
+[devops] $ /bin/sh -xe /tmp/jenkins16755433491010476377.sh
++ ls -l
+total 16
+-rw-r--r-- 1 jenkins jenkins  60 Mar 28 18:34 Dockerfile
+-rw-r--r-- 1 jenkins jenkins 468 Mar 28 18:34 Jenkinsfile
+-rw-r--r-- 1 jenkins jenkins 137 Mar 28 18:34 README.md
+-rw-r--r-- 1 jenkins jenkins  61 Mar 28 18:39 index.html
+Finished: SUCCESS

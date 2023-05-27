@@ -1,0 +1,31 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/devops
+The recommended git tool is: NONE
+using credential mv-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/devops/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vuevska/devops # timeout=10
+Fetching upstream changes from https://github.com/vuevska/devops
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Github credentials for vuevska
+ > git fetch --tags --force --progress -- https://github.com/vuevska/devops +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/develop
+Seen branch in repository origin/main
+Seen branch in repository origin/test
+Seen 3 remote branches
+ > git show-ref --tags -d # timeout=10
+Checking out Revision f26f260c00fe1c4b2e2e04cec80ec3fbc8d7e7f1 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f26f260c00fe1c4b2e2e04cec80ec3fbc8d7e7f1 # timeout=10
+Commit message: "Add Commands for Chapter 4 from homework 2"
+ > git rev-list --no-walk f26f260c00fe1c4b2e2e04cec80ec3fbc8d7e7f1 # timeout=10
+[devops] $ /bin/sh -xe /tmp/jenkins3506597319552476926.sh
++ ls -l
+total 16
+-rw-r--r-- 1 jenkins jenkins   75 Mar 28 12:29 README.md
+drwxr-xr-x 2 jenkins jenkins 4096 Mar 28 12:29 homework_1
+drwxr-xr-x 3 jenkins jenkins 4096 Mar 28 12:29 homework_2
+drwxr-xr-x 3 jenkins jenkins 4096 Mar 28 12:29 homework_3
+Finished: SUCCESS

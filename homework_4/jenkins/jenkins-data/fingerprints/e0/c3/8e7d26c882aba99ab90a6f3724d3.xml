@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-03-28 12:29:00.786 UTC</timestamp>
+  <md5sum>e0c38e7d26c882aba99ab90a6f3724d3</md5sum>
+  <fileName>Credential id=mv-github name=vuevska/****** (Github credentials for vuevska)</fileName>
+  <usages>
+    <entry>
+      <string>devops</string>
+      <ranges>1-246</ranges>
+    </entry>
+    <entry>
+      <string>devops-jenkins/master</string>
+      <ranges>2-5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
